@@ -1,7 +1,7 @@
 import tkinter as tk
 
 
-def init_menu(root: tk.Tk, action):
+def init_menu(root: tk.Tk, action: lambda name: str):
     main_menu = tk.Menu(root)
     f_size: int = 10
 
