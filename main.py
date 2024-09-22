@@ -1,6 +1,5 @@
 import tkinter as tk
-import menu
-
+from menu import MainMenu
 
 
 def main_gui():
@@ -8,7 +7,8 @@ def main_gui():
     root.title("Python Languages Codes")
     root.geometry("800x500")
 
-    menu.init_menu(root, menu_clicked)
+    main_menu = MainMenu(root, menu_clicked)
+    #menu.init_menu(root, menu_clicked)
     root.mainloop()
 
 
