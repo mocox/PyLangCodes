@@ -1,16 +1,12 @@
 import tkinter as tk
 
 
-class GermanLanguage:
-    def __init__(self, root: tk.Tk()):
-        self.root: tk.Tk = root
+class GermanLanguage(tk.Frame):
+    def __init__(self, parent):
+        tk.Frame.__init__(self,parent)
 
-    def initialise(self):
-
-        #self.root.frame = tk.Frame(self.root, height=100, width=100, bd=2, background='#ff0000')
-        #self.root.frame.pack()
-
-        label = tk.Label(self.root.frame, text="German", font=('Comic',15), foreground='#00ff00' )
-        label.pack()
+        #self.configure(background='#000000')
+        label = tk.Label(self, text="German", font=('Comic',15), foreground='#00ff00' )
+        label.pack(pady=10)
 
 
