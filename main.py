@@ -11,8 +11,6 @@ class MainGui(tk.Tk):
         self.title("Python Languages Codes")
         self.geometry("800x500")
 
-        self.language = "German"
-
         self.root = tk.Frame(self)
         self.root.pack(side="top", fill="both", expand = True)
 

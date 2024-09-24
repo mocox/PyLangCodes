@@ -6,7 +6,7 @@ class GermanLanguage(tk.Frame):
         tk.Frame.__init__(self,parent)
 
         #self.configure(background='#000000')
-        label = tk.Label(self, text="German", font=('Comic',15), foreground='#00ff00' )
+        label = tk.Label(self, text="German", font=('Comic',15), foreground='#000000' )
         label.pack(pady=10)
 
 
