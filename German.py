@@ -9,8 +9,8 @@ class GermanLanguage(tk.Frame):
         label = tk.Label(self, text="German", font=('Comic',15), foreground='#000000' )
         label.pack(pady=10)
 
-        button = tk.Button(self, text="ü", command=lambda: root.copy_to_clipboard, bd='1')
-        button.pack()
+        button = tk.Button(self, text="ü", command=lambda: root.copy_to_clipboard("ü"), bd='2')
+        button.pack(pady=10, padx=10)
 
 
 

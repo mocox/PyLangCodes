@@ -44,8 +44,9 @@ class MainGui(tk.Tk):
         else:
             self.show_frame(Fr)
 
-    def copy_to_clipboard(self, text:str):
-        pass
+    @staticmethod
+    def copy_to_clipboard(text:str):
+        print(f"Copied to clipboard - {text}")
 
 if __name__ == "__main__":
     app = MainGui()
