@@ -2,7 +2,7 @@ import tkinter as tk
 
 
 class SpanishLanguage(tk.Frame):
-    def __init__(self, parent):
+    def __init__(self, parent, root):
         tk.Frame.__init__(self, parent)
         #self.configure(background='#000000')
         label = tk.Label(self, text="Spanish", font=('Comic', 15), foreground='#000000')

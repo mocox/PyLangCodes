@@ -23,8 +23,8 @@ class MainGui(tk.Tk):
         self.frames = {}
 
         for F in (Gl, Sl, Fr):
-            frame = F(self.root)
-            #frame.pack()
+            frame = F(self.root, self)
+
             self.frames[F] = frame
             frame.grid(row=0, column=0, sticky="nsew")
 
@@ -44,6 +44,8 @@ class MainGui(tk.Tk):
         else:
             self.show_frame(Fr)
 
+    def copy_to_clipboard(self, text:str):
+        pass
 
 if __name__ == "__main__":
     app = MainGui()
